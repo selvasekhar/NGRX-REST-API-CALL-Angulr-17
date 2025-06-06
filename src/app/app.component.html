@@ -1,0 +1,9 @@
+loading => {{loading$ | async}}
+<ul>
+    @for (item of department$ | async ; track $index) {
+        <li>{{item.departmentName}}</li>
+    }
+</ul>
+
+Admin Page
+<app-admin></app-admin>
